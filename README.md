@@ -75,7 +75,7 @@ $smsSender->sendSms($phone,$sms);
 ```
 
 
-Если вы хотите видить все логи мам нужно применить миграции который лежат в папки ```migrations```
+Если вы хотите видить все логи вам нужно применить миграции который лежат в папки ```migrations```
 
 ```php
 yii migrate --migrationPath=@vendor/jakharbek/yii2-sms/migrations
