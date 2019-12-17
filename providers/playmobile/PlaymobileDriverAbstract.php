@@ -54,7 +54,7 @@ abstract class PlaymobileDriverAbstract extends Component implements SmsSenderIn
     public function sendSms($phone, $msg): sendSmsResponseDTO
     {
         $phone = preg_replace("#[^0-9]#", null, $phone);
-        $message_id = date("Y-m-d-H-i-s");
+        $message_id = (int)(microtime(true)*100);
         $originator = $this->getOriginator();
         $config = $this->config;
 
